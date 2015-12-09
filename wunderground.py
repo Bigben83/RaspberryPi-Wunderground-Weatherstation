@@ -49,9 +49,6 @@ while(True):
 		print 'Failed to get reading. Try again!'
 
 # upload data to Wunderground
-#	print "sensor output is ", temperature, humidity, pressure_sfc, temp, 
-	print "preI =", preI, "preBI =", preBI, "pressure_sfc =", pressure_sfc
-#	print "starting data upload"
 	try:
 			conn = httplib.HTTPConnection("rtupdate.wunderground.com")
 			path = ("/weatherstation/updateweatherstation.php?ID=" + station_id
