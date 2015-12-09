@@ -1,4 +1,4 @@
-Raspberry_Pi Wunderground Weather Station
+<h2>Raspberry_Pi Wunderground Weather Station</h2>
 
 I have finally got around to updating my code to reflect the changes in Adafruits updated Sensor Code.
 I havent quite finished adding the Rain Guage Option yet but will do that in the next day or so.
