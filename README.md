@@ -33,6 +33,9 @@ Firstly Update</br>
 ```cd Adafruit_Python_BMP```</br>
 ```sudo python setup.py install```</br>
 
+<b>Now intstall Wunderderground-Weatherstation</b></br>
+```git clone https://github.com/Bigben83/RaspberryPi-Wunderground-Weatherstation.git```</br>
+
 <b>Further Information</b>
 Wonderground require information to be submitted in specific values e.g.
 * Temperature in Farenheit  |  °C  x  9/5 + 32 = °F
