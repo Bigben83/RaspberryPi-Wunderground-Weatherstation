@@ -3,6 +3,8 @@
 I have finally got around to updating my code to reflect the changes in Adafruits updated Sensor Code.
 I havent quite finished adding the Rain Guage Option yet but will do that in the next day or so.
 
+[logo]:<a href="http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=ITASMANI159"><img src="http://banners.wunderground.com/cgi-bin/banner/ban/wxBanner?bannertype=wxstnsticker_metric&weatherstationcount=ITASMANI159" height="160" width="160" border="0" alt="Weather Underground PWS ITASMANI159" /></a>
+
 The various results that can be uploaded to wunderground are shown on this link
 http://wiki.wunderground.com/index.php/PWS_-_Upload_Protocol
 
