@@ -19,6 +19,7 @@ http://wiki.wunderground.com/index.php/PWS_-_Upload_Protocol
 <b>I intend to add the following sensors</b></br>
 * UV Sensor = Adafruit SI1145</br>
 * Soil Moisture = Adafruit SLHT5 or Similar</br>
+* Soil Temperature = DS18B20</br>
 * Anemometer = Some analogue voltage</br>
 
 <b>Installation Instructions</b></br>
