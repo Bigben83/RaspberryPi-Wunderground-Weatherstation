@@ -44,11 +44,11 @@ Wonderground require information to be submitted in specific values e.g.</br></b
 * Temperature in Farenheit  |  °C  x  9/5 + 32 = °F
 * Pressure in barometric pressure inches |  Pa / 33.8638866667</br>
 * Dew Point in Farenheit</br>
-* Rain in Inches  |  mm * 0.039370</br></br>
+* Rain in Inches  |  mm * 0.039370</br>
 * Wind Chill = 35.74 + 0.6215T – 35.75(V^0.16) + 0.4275T(V^0.16)</br>
 T=air temp F,V=wind speed in miles per hour.</br>
 
-So all reading are converted to required value before uploading.
+All readings are converted to required value before uploading.
 
 I will add further as I check and upload my code.
 
