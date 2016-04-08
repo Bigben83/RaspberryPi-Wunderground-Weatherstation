@@ -42,6 +42,7 @@ while(True):
 	pressure_sfc = get_sfc_pres()
 	precip_sfc = get_precip()
 	dewptf = dewpoint_f(F_temp, humidity)
+	windspeedmph = get_k_to_m(wind_speed)
 	
 	if humidity is not None and temperature is not None:
 		print 'Temp={0:0.1f}*C  Humidity={1:0.1f}%'.format(temperature, humidity)
