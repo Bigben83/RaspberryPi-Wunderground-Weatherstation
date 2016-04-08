@@ -91,7 +91,6 @@ def spin(channel):
     count += 1
     print (count)
 
-GPIO.setmode(GPIO.BCM)
 GPIO.setup(speed_port, GPIO.IN, GPIO.PUD_UP)
 GPIO.add_event_detect(speed_port, GPIO.FALLING, callback=spin)
 
