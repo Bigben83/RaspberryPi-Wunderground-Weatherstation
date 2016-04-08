@@ -8,7 +8,7 @@
 #  Pyronometer (homemade) [ADC]
 #  Rainwise RAINEW 111 Tipping Bucket Rain Gauge [pulse]
 
-# Last updated: 2015-12-09
+# Last updated: 2016-04-08
 # Created by Benjamin Harris
 
 import Adafruit_DHT
