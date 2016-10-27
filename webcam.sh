@@ -1,8 +1,12 @@
+#!/bin/bash
 # Last updated: 2016-10-27
 # Created by Benjamin Harris
 
 # Requires fswebcam and functioning webcamera
-
+# sudo apt-get install -y ftp
+# sudo apt-get install -y fswebcam
+# sudo apt-get install -y ncftpput
+# */5 * * * * /path/to/webcam.sh >> /dev/null 2>&1
 # Tested on Raspberry PI running Raspian and Logitech Webcamera
 # You may have to change fswebcam options to match you camera
 
