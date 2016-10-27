@@ -17,25 +17,30 @@
 # Time between uploading images to wunderground
 delay = 600
 # Wunderground personal weather station ID/password
-stationid = ""
-password = ""
-ftphost = "webcam.wunderground.com"
+stationid = id
+password = password
+ftphost = webcam.wunderground.com
 
 # ===========================================================
 # Begin Script
 # ===========================================================
 
-filename=`date +'%F-%H-%M-%S'`.jpg
+filename=`date +'%F-%H-%M'`.jpg
 
 cd webcamuploads
-fswebcam -p MJPEG -r 1280x720 --jpeg 95 --no-banner --save ${filename}
+fswebcam -D 1 -S 3 -p MJPEG -r 1024x768 --jpeg 95 --no-banner /dev/null -F 3
+sleep 2
+fswebcam -D 1 -S 3 -p MJPEG -r 1024x768 --jpeg 95 --no-banner --save ${filename}
 cp ${filename} image.jpg
 
-ftp -n ftphost <<EOF
-user stationid password
+/usr/bin/ftp -v -n $ftphost <<EOF
+user $stationid $password
 binary
 put image.jpg
 
 quit
 
 EOF
+
+# removes date image file
+rm ${filename}
