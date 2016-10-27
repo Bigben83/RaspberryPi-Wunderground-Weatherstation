@@ -12,7 +12,7 @@
 # ===========================================================
 
 # Time between uploading images to wunderground
-# delay = 600
+delay = 600
 # Wunderground personal weather station ID/password
 stationid = ""
 password = ""
@@ -23,17 +23,14 @@ password = ""
 
 filename=`date +'%F-%H-%M-%S'`.jpg
 
-# Loop to continously upload data (with delay)
-while(True):
+cd webcamuploads
+fswebcam -p MJPEG -r 1280x720 --jpeg 95 --no-banner --save ${filename}
+cp ${filename} image.jpg
 
-  cd webcamuploads
-  fswebcam -p MJPEG -r 1280x720 --jpeg 95 --no-banner --save ${filename}
-  cp ${filename} image.jpg
-
-  ftp -n webcam.wunderground.com <<EOF
-  user stationid password
-  binary
-  put image.jpg
+ftp -n webcam.wunderground.com <<EOF
+user stationid password
+binary
+put image.jpg
 
 # Wait before re-uploading data
 time.sleep(delay)
