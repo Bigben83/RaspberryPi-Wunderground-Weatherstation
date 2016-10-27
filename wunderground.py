@@ -1,7 +1,11 @@
 # This datalogger script is responsible for collecting meteorological
 # information from the following sensors
 
-# Last updated: 2015-12-09
+# To run on startup
+# nano /etc/rc.local
+# (sleep 10;python path/to/your/scriptname.py)&
+
+# Last updated: 2016-10-27
 # Created by Benjamin Harris
 
 import sys
